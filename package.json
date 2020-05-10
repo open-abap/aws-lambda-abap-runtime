@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "aws-lambda-abap-runtime",
+  "version": "0.0.1",
+  "description": "AWS Lambda ABAP custom runtime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "{{ authors }}",
+  "license": "MIT",
+  "devDependencies": {
+    "@abaplint/transpiler": "^0.4.4"
+  },
+  "dependencies": {
+    "@abaplint/runtime": "^0.4.4"
+  }
+}
