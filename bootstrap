@@ -17,7 +17,7 @@ do
 
   # Execute the handler function from the script
   cd /opt/
-  RESPONSE=$(sourcecode=$sourcecode event=$EVENT_DATA _HANDLER='zcl_handler.clas.abap' node runtime.js)
+  RESPONSE=$(sourcecode=$sourcecode event=$EVENT_DATA _HANDLER=$_HANDLER node runtime.js)
 
   # Send the response
   curl -X POST "http://${AWS_LAMBDA_RUNTIME_API}/2018-06-01/runtime/invocation/$REQUEST_ID/response"  -d "$RESPONSE"
