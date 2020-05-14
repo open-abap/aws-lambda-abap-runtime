@@ -1,2 +1,4 @@
 node_modules/
 layer.zip
+.aws-sam/
+samconfig.toml

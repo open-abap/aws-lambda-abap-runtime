@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: abap-runtime
+Resources:
+    AbapRuntimeLayer:
+        Type: AWS::Serverless::LayerVersion
+        Properties:
+            LayerName: abap-runtime-layer
+            Description: custom runtime layer for ABAP
+            ContentUri: ./layer.zip
+            CompatibleRuntimes:
+                - provided
+            LicenseInfo: 'MIT'
+            RetentionPolicy: Retain
